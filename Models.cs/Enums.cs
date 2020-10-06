@@ -1,10 +1,14 @@
 using System;
 
+namespace BattleShipLiteLibrary
+{
 
-public enum GridSpotStatus {
-	Empty,
-	Ship,
-	Miss,
-	Hit,
-	Sunk
+	public enum GridSpotStatus 
+	{
+		Empty,
+		Ship,
+		Miss,
+		Hit,
+		Sunk
+	}
 }

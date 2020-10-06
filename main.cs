@@ -1,39 +1,47 @@
 using System;
 using System.Collections.Generic;
+using Models.BattleShipLiteLibrary;
 
-class MainClass {
-  public static void Main (string[] args) {
-		
-		//Main
-		
-    Console.ReadLine();
-  }
+namespace BattleshipLite
+{
+	
+	class MainClass {
+  	public static void Main (string[] args) {
 
-	//methods
-	public static string AskPlayerName() {
+			//Main
+			WelcomeMessage();
 
+  	  Console.ReadLine();
+  	}
+
+		//methods
+		private static void WelcomeMessage() 
+		{
+			Console.WriteLine("Welcome to Battleship Lite!");
+			Console.WriteLine("Created by: Jeff Eckman");
+			Console.WriteLine();
+		}
+
+		private static PlayerInfoModel CreatePlayer() 
+		{
+			PlayerInfoModel output = new PlayerInfoModel();
+
+			//ask the user for their namespace
+			output.Name = AskForUsersName();
+
+			//load up the shot grid
+			output.ShotGrid
+			
+			//ask the user for their 5 ship placements
+			//clear
+		}
+
+		private static string AskForUsersName() 
+		{
+			Console.Write("What is your name: ");
+			string output = Console.ReadLine();
+
+			return output;
+		}
 	}
-
-	public static void PlayerShipPlacement() {
-
-	}
-
-	public static void PlayerShotLocation() {
-
-	}
-
-	public static void ShotResult() {
-
-	}
-
-	public static void DisplayGameStats() {
-
-	}
-
-	public static void GameStatus() {
-
-	}
-
-
-
 }
