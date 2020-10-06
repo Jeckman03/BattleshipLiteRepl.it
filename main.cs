@@ -11,6 +11,8 @@ namespace BattleshipLite
 			//Main
 			WelcomeMessage();
 
+
+
   	  Console.ReadLine();
   	}
 
@@ -30,9 +32,10 @@ namespace BattleshipLite
 			output.Name = AskForUsersName();
 
 			//load up the shot grid
-			output.ShotGrid
+			GameLogic.InitializeGrid(output);
 			
 			//ask the user for their 5 ship placements
+			
 			//clear
 		}
 
