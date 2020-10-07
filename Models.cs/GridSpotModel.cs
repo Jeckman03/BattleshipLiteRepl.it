@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace BattleShipLiteLibrary 
 {
 
-	public class GridSpot 
+	public class GridSpotModel 
 	{
 
 		public string SpotLetter { get; set; }

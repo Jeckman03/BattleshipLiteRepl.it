@@ -1,5 +1,6 @@
 using System;
-using Models.BattleShipLiteLibrary;
+using BattleShipLiteLibrary;
+using System.Collections.Generic;
 
 namespace BattleShipLiteLibrary
 {
@@ -35,14 +36,17 @@ namespace BattleShipLiteLibrary
 			}
 		}
 
-		private static void AddGridSpot(PlayerInfoModel model, string letter, int number)
-		{
+		private static void AddGridSpot(PlayerInfoModel model, string letter, int number) {
 			GridSpotModel spot = new GridSpotModel();
 			spot.SpotLetter = letter;
 			spot.SpotNumber = number;
 			spot.Status = GridSpotStatus.Empty;
 
 			model.ShotGrid.Add(spot);
+		}
+
+		public static bool StoreShot(PlayerInfoModel model, string location) {
+			throw new NotImplementedException();
 		}
 	}
 }

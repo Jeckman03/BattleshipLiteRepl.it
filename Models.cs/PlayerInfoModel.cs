@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using BattleShipLiteLibrary;
 
 namespace BattleShipLiteLibrary
 {
@@ -9,9 +10,9 @@ namespace BattleShipLiteLibrary
 
 		public string Name { get; set; }
 
-		public List<GridSpotModel> ShipLocations { get; set; }
+		public List<GridSpotModel> ShipLocations { get; set; } = new List<GridSpotModel>();
 
-		public List<GridSpotModel> ShotGrid { get; set; }
+		public List<GridSpotModel> ShotGrid { get; set; } = new List<GridSpotModel>();
 	}		
 }
 
