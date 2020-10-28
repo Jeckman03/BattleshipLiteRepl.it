@@ -7,6 +7,36 @@ namespace BattleShipLiteLibrary
 
 	public static class GameLogic 
 	{
+		public static void MarkShotResult(PlayerInfoModel activePlayer, string row, int column, bool isHit)
+		{
+
+		}
+
+		public static bool IdentifyShotResult(PlayerInfoModel opponent, string row, int column)
+		{
+
+		}
+
+		public static bool ValidateShot(PlayerInfoModel activePlayer, string row, int column)
+		{
+
+		}
+
+		public static (string, int) SplitShotIntoRowAndColumn(string shot)
+		{
+
+		}
+
+		public static int GetShotCount(PlayerInfoModel winner)
+		{
+
+		}
+
+		public static bool PlayerStillActive(PlayerInfoModel opponent)
+		{
+
+		}
+
 		public static void InitializeGrid(PlayerInfoModel model)
 		{
 			List<string> letters = new List<string> 
